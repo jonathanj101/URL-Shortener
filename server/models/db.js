@@ -10,10 +10,12 @@ if (process.env.DBUSER) {
 connectionString += `${process.env.DBHOST}:27017/${process.env.DATABASE}`;
 
 mongoose.set("strictQuery", true);
+
+// connection function
 const db = async () => {
     try {
-        console.log("DB connected Succesfully");
         await mongoose.connect(connectionString);
+        console.log("DB connected Succesfully");
     } catch (error) {
         console.log("Error at db connection", error.message);
     }
