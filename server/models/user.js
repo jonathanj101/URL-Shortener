@@ -27,9 +27,9 @@ const userSchema = new Schema({
         required: false,
         type: [
             {
-                shortUrlId: {
+                urlId: {
                     type: Schema.Types.ObjectId,
-                    ref: "short_urls",
+                    ref: "urls",
                 },
             },
         ],
