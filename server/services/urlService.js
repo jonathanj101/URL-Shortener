@@ -11,4 +11,10 @@ urlService.deleteUrls = (ids) => {
     return urlModel.deleteMany({ _id: { $in: ids } });
 };
 
+urlService.getUrlById = (id) => {
+    return urlModel.findOne({
+        _id: id,
+    });
+};
+
 module.exports = urlService;
