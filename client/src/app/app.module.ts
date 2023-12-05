@@ -11,12 +11,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UrlsTableComponent } from './views/urls-table/urls-table.component';
 import { AddUrlComponent } from './views/add-url/add-url.component';
+import { DefaultLayoutComponent } from './container/default-layout/default-layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UrlsTableComponent,
-    AddUrlComponent
+    AddUrlComponent,
+    DefaultLayoutComponent
   ],
   imports: [
     BrowserModule,
