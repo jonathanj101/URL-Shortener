@@ -18,7 +18,7 @@ import { DefaultLayoutComponent } from './container/default-layout/default-layou
     AppComponent,
     UrlsTableComponent,
     AddUrlComponent,
-    DefaultLayoutComponent
+    DefaultLayoutComponent,
   ],
   imports: [
     BrowserModule,
